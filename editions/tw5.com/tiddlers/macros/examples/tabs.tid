@@ -5,10 +5,16 @@ title: tabs Macro (Examples)
 type: text/vnd.tiddlywiki
 
 <$macrocall $name=".example" n="1"
-eg="""<<tabs "SampleTabOne SampleTabTwo SampleTabThree SampleTabFour" "SampleTabOne" "$:/state/tab1">>"""/>
+eg="""<<tabs "SampleTabOne SampleTabTwo SampleTabThree SampleTabFour SampleTabFive" "SampleTabOne" "$:/state/tab1">>"""/>
 
 <$macrocall $name=".example" n="2"
-eg="""<<tabs "[tag[sampletab]]" "SampleTabTwo" "$:/state/tab2" "tc-vertical">>"""/>
+eg="""<<tabs "[tag[sampletab]]" "SampleTabTwo" "$:/state/tab2">>"""/>
 
 <$macrocall $name=".example" n="3"
-eg="""<<tabs "[tag[sampletab]nsort[order]]" "SampleTabThree" "$:/state/tab3" "tc-vertical">>"""/>
+eg="""<<tabs "[tag[sampletab]nsort[order]]" "SampleTabThree" "$:/state/tab3">>"""/>
+
+<$macrocall $name=".example" n="4"
+eg="""<<tabs "[tag[sampletab]]" "SampleTabFour" "$:/state/tab4 "tc-vertical">>"""/>
+
+<$macrocall $name=".example" n="5"
+eg="""<<tabs "[tag[sampletab]nsort[order]]" "SampleTabFive" "$:/state/tab5" "tc-vertical">>"""/>
